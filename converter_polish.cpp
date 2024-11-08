@@ -28,7 +28,7 @@ std::string postfix_converter(std::string s){
                                             '9', '0'};
         std::stack<char> st;
         std::string postfix = "";
-        int j;
+        int j = 0;
         for(int i = 0;i<s.length(); i++){
             char curr = s[i];
             if(opening.count(curr)){ //if opening parenthesis
